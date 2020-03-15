@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+body,html{
+    margin:0;
+    padding: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    background: none;
+    color: inherit;
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    
+    
+}
+
+#main{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('repeated-square.png');
+    background-repeat: repeat;
+    
+  
+}
+
+#main h1{
+    margin: 0 auto; 
+    font-size: 2em;
+    text-align: center;
+}
+#main h4{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#action{
+    display: flex;
+    justify-content: space-between;
+}
+
+#action p{
+    margin:8px 10px;
+    padding:15px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+#login{
+    background: hsl(239, 100%, 42%);
+    border-radius: 75px 0px 0px 75px;
+-moz-border-radius: 75px 0px 0px 75px;
+-webkit-border-radius: 75px 0px 0px 75px;
+border: 0px solid #000000;
+-webkit-box-shadow: -1px 7px 16px -4px rgba(0,0,0,0.36);
+-moz-box-shadow: -1px 7px 16px -4px rgba(0,0,0,0.36);
+box-shadow: -1px 7px 16px -4px rgba(0,0,0,0.36);
+}
+
+#signup{
+    background: #007069;
+    border-radius: 0px 75px 75px 0px;
+-moz-border-radius: 0px 75px 75px 0px;
+-webkit-border-radius: 0px 75px 75px 0px;
+border: 0px solid #000000;
+-webkit-box-shadow: 1px 10px 16px -4px rgba(0,0,0,0.36);
+-moz-box-shadow: 1px 10px 16px -4px rgba(0,0,0,0.36);
+box-shadow: 1px 10px 16px -4px rgba(0,0,0,0.36);
+}
+
+.form-controller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('repeated-square.png');
+    background-repeat: repeat;
+}
+
+input[type=text],input[type=email],input[type=password],input[type=number],input[type=tel] {
+    background:rgba(255, 255, 255, 0.50);
+    border:none;
+    border-bottom:2px red solid;
+    margin:5px;
+    text-align: left;
+    width: 50vw;
+    max-width: 500px;
+    height: 45px;
+    color: red;
+    font-weight: bold;
+    padding-left: 5px ;
+    
+}
+
+input[type=tel]{
+    max-width:50px !important;
+}
+
+
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[type=number]:focus,input[type=tel]:focus{
+    border:2px red solid;
+    outline:none;
+}
+
+input:placeholder-shown{
+    padding-left: 5px;
+}
+
+input[type=submit]{
+    border:none;
+    background: red;
+    padding:15px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+input[type=submit]:focus{
+    outline: none;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". . .";
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px red solid;
+    
+}
+.row-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". . .";
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px red solid;
+    font-weight: 400;
+    
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  width: 50px !important;
+}
+
+#footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background: red;
+}
+
+#saldo{
+    background: red !important;
+}
+#saldo p{
+    background: red !important;
+    font-weight: bold;
+    color: white;
+}
+
+#saldo,#aggiungi{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#aggiungi{
+    background-image: url('repeated-square.png');
+    background-repeat: repeat;
+}
+
+#topbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: red;
+    height: 25px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    padding-top: 4px;
+    margin:0;
+}
+
+.spese{
+    margin-bottom: 132px;
+    margin-top: 29px;
+    background-color: #fff !important;
+}
+
